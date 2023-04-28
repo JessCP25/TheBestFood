@@ -1,0 +1,145 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(300px, 2fr) 3fr;
+    grid-auto-rows: 1fr;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.26);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.info{
+    align-self: center;
+    padding: 20px;
+}
+.hero-img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.info-title{
+    color: #333;
+    font-size: 3.6rem;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+.info-subtitle{
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+}
+.info-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 20px;
+    color: #faf0f0;
+    background-color: #d16008;
+    background-image: linear-gradient(0deg, #d16008 0%, #f79d57 100%);
+    font-weight: bolder;
+    padding: 12px 14px;
+}
+.description__button-icon{
+    background-image: url(./bx-right-arrow-alt.svg);
+    width: 20.8px;
+    height: 20.8px;
+    display: inline-block;
+    background-size: cover;
+    margin-left: 10px;
+    filter: invert(100%) sepia(2%) saturate(7470%) hue-rotate(359deg) brightness(119%) contrast(97%);
+}
+.description__redes{
+    margin-top: 20px;
+}
+.description__icon-fb{
+    background-image: url(./icons8-facebook.svg);
+    width: 23.8px;
+    height: 23.8px;
+    background-size: cover;
+    display: inline-block;
+    filter: invert(55%) sepia(10%) saturate(374%) hue-rotate(341deg) brightness(99%) contrast(87%);
+}
+.description__redes box-icon{
+    fill: #968a82;
+}
+.description__icon-tw{
+    background-image: url(./icons8-twitter-cuadrado-50.png);
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+    display: inline-block;
+    filter: invert(55%) sepia(10%) saturate(374%) hue-rotate(341deg) brightness(99%) contrast(87%);
+    margin: 2px 2px 2px 0;
+}
+.dishes{
+    margin: 80px auto;
+}
+.dishes-title{
+    color: #333;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.dishes-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,200px));
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+.dishes-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dishes-item__big{
+    grid-area: 1 / 1 / 3 / 3;
+}
+.menu{
+    margin: 80px 0;
+}
+.menu-title{
+    color: #333;
+    font-size: 2.4rem;
+    text-align: center;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,170px);
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+.menu-item{
+    padding: 14px;
+    background-color: rgba(251, 140, 0, 0.25);
+    border-top-left-radius: 20px;
+}
+.menu-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: minmax(300px,500px);
+        justify-content: center;
+    }
+    .dishes-grid{
+        grid-template-columns: repeat(auto-fit,minmax(75px,120px));
+    }
+}
